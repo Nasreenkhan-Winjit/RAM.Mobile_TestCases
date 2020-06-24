@@ -160,120 +160,120 @@ public void LoginInValidCrewMemberID() throws InterruptedException {
 	  
 	  MobileElement addCrewMemberBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_add_crew_members");
 	  addCrewMemberBtn.click();
-	  MobileElement el10 = (MobileElement) driver.findElementById("com.ram.courier:id/txt_dont_hv_ram_id");
-	  el10.click();
-	  MobileElement el11 = (MobileElement) driver.findElementById("com.ram.courier:id/et_sa_no");
-	  el11.sendKeys("700915515408");
+	  MobileElement clickOnLinkDonthaveRamId = (MobileElement) driver.findElementById("com.ram.courier:id/txt_dont_hv_ram_id");
+	  clickOnLinkDonthaveRamId.click();
+	  MobileElement enterInvalidAddCrewMember = (MobileElement) driver.findElementById("com.ram.courier:id/et_sa_no");
+	  enterInvalidAddCrewMember.sendKeys("700915515408");
 }
 	  
 @Test(description= "validate AddcrewMember with valid ID", priority = 5 )
 
 public void LoginValidCrewMemberID() throws InterruptedException {
 	  	 
-	  MobileElement el12 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_member");
-	  el12.click();
-	  MobileElement el13 = (MobileElement) driver.findElementById("com.ram.courier:id/et_sa_no");
-	  el13.sendKeys("7009155154085");
-	  MobileElement el14 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_member");
-	  el14.click();
+	  MobileElement clickOnSubmitBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_member");
+	  clickOnSubmitBtn.click();
+	  MobileElement enterValidCrewMember = (MobileElement) driver.findElementById("com.ram.courier:id/et_sa_no");
+	  enterValidCrewMember.sendKeys("7009155154085");
+	  MobileElement clickOnSubmitBtn1 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_member");
+	  clickOnSubmitBtn1.click();
 	  
 }  
 @Test(description= "Proceed without entering id", priority = 6 )
 
 public void InvalidProceedToScan() throws InterruptedException {	
 
-	  MobileElement el15 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed_to_scan");
-	  el15.click();
-	  MobileElement el16 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
-	  el16.click();
-	  MobileElement el17 = (MobileElement) driver.findElementById("android:id/button1");
-	  el17.click();
+	  MobileElement clickOnProceedToScanBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed_to_scan");
+	  clickOnProceedToScanBtn.click();
+	  MobileElement clickOnProceedBtn2 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
+	  clickOnProceedBtn2.click();
+	  MobileElement clickOnPopOKbtn = (MobileElement) driver.findElementById("android:id/button1");
+	  clickOnPopOKbtn.click();
 } 
 	  
 @Test(description= "Validate Dont have scan ID", priority = 7 )
 
 public void ValidProceedToScan() throws InterruptedException {		  
 	  
-	  MobileElement el18 = (MobileElement) driver.findElementById("com.ram.courier:id/txt_dont_hv_ds");
-	  el18.click();
+	  MobileElement clickOnLinkDeliverySheetNoManually = (MobileElement) driver.findElementById("com.ram.courier:id/txt_dont_hv_ds");
+	  clickOnLinkDeliverySheetNoManually.click();
 }	  
 	  
 @Test(description= "EnterMannually InvalidManifest ID", priority = 8 )
 
 public void InvalidManifestID() throws InterruptedException {		  
 	  
-	  MobileElement el19 = (MobileElement) driver.findElementById("com.ram.courier:id/et_ds_no");
-	  el19.sendKeys("DDISA1581682782");
-	  MobileElement el20 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_ds_no");
-	  el20.click();
-	  MobileElement el21 = (MobileElement) driver.findElementById("android:id/button1");
-	  el21.click();
+	  MobileElement entertxtInvalidDeliverySheetNo = (MobileElement) driver.findElementById("com.ram.courier:id/et_ds_no");
+	  entertxtInvalidDeliverySheetNo.sendKeys("DDISA1581682782");
+	  MobileElement clickOnSubmitBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_ds_no");
+	  clickOnSubmitBtn.click();
+	  MobileElement clickOnOKBtn = (MobileElement) driver.findElementById("android:id/button1");
+	  clickOnOKBtn.click();
 	  
 }
 @Test(description= "EnterMannually InvalidManifest ID", priority = 9 )
 
 public void ValidManifestID() throws InterruptedException {		  
 	    
-	  MobileElement el22 = (MobileElement) driver.findElementById("com.ram.courier:id/et_ds_no");
-	  el22.sendKeys("DDISA15816827824");
-	  MobileElement el23 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_ds_no");
-	  el23.click();
-	  MobileElement el24 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
-	  el24.click();
-	  MobileElement el25 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
-	  el25.click();
+	  MobileElement entertxtValidDeliverySheetNo = (MobileElement) driver.findElementById("com.ram.courier:id/et_ds_no");
+	  entertxtValidDeliverySheetNo.sendKeys("DDISA15816827824");
+	  MobileElement clickOnSubmitBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_ds_no");
+	  clickOnSubmitBtn.click();
+	  MobileElement clickOnProceedBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
+	  clickOnProceedBtn.click();
+	  MobileElement clickOnProceedBtn1 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
+	  clickOnProceedBtn1.click();
 }
 	  @Test(description= "ConfirmNo.Of parcel Invalid case", priority = 10 )
 
 	  public void InvalidConfirmNoOfParcel() throws InterruptedException {		
-	  MobileElement el26 = (MobileElement) driver.findElementById("com.ram.courier:id/et_total_parcels");
-	  el26.sendKeys("16");
-	  MobileElement el27 = (MobileElement) driver.findElementById("com.ram.courier:id/proceed_for_further_sheet");
-	  el27.click();
-	  el26.clear();
+	  MobileElement entertxtInvalidTotalParcel = (MobileElement) driver.findElementById("com.ram.courier:id/et_total_parcels");
+	  entertxtInvalidTotalParcel.sendKeys("16");
+	  MobileElement clickOnProceedBtnforfurthersheet = (MobileElement) driver.findElementById("com.ram.courier:id/proceed_for_further_sheet");
+	  clickOnProceedBtnforfurthersheet.click();
+	  clickOnProceedBtnforfurthersheet.clear();
 	  }
 	  
 	  @Test(description= "ConfirmNo.Of parcel  valid case", priority = 11 )
 
 	  public void ValidConfirmNoOfParcel() throws InterruptedException {	
 	  
-	  MobileElement el29 = (MobileElement) driver.findElementById("com.ram.courier:id/et_total_parcels");
-	  el29.sendKeys("18");
+	  MobileElement entertxtValidTotalParcel = (MobileElement) driver.findElementById("com.ram.courier:id/et_total_parcels");
+	  entertxtValidTotalParcel.sendKeys("18");
 	 	  
-	  MobileElement el30 = (MobileElement) driver.findElementById("com.ram.courier:id/proceed_for_further_sheet");
-	  el30.click();
+	  MobileElement clickOnProceedBtnforfurthersheet = (MobileElement) driver.findElementById("com.ram.courier:id/proceed_for_further_sheet");
+	  clickOnProceedBtnforfurthersheet.click();
 	  }
 	  @Test(description= "InValidVehicle No.", priority = 12 )
 
 	  public void InValidVehicleID() throws InterruptedException {	
 	  
 	  
-	  MobileElement el31 = (MobileElement) driver.findElementById("com.ram.courier:id/et_registration_no");
-	  el31.sendKeys("CL08FRG");
-	  MobileElement el32 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_veh_no");
-	  el32.click();
+	  MobileElement entertxtInvalidRegistrationNo = (MobileElement) driver.findElementById("com.ram.courier:id/et_registration_no");
+	  entertxtInvalidRegistrationNo.sendKeys("CL08FRG");
+	  MobileElement clickOnSubmitBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_veh_no");
+	  clickOnSubmitBtn.click();
 	  
-	  MobileElement el33 = (MobileElement) driver.findElementById("android:id/button1");
-	  el33.click();
+	  MobileElement clickOnOkBtn = (MobileElement) driver.findElementById("android:id/button1");
+	  clickOnOkBtn.click();
 	  
 	  }
 	  @Test(description= "Enter Valid Vehicle No.", priority = 13 )
 
 	  public void ValidVehicleID() throws InterruptedException {	
-	  MobileElement el34 = (MobileElement) driver.findElementById("com.ram.courier:id/et_registration_no");
-	  el34.sendKeys("CL08FRGP");
-	  MobileElement el35 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_veh_no");
-	  el35.click();
+	  MobileElement entertxtValidRegistrationNo = (MobileElement) driver.findElementById("com.ram.courier:id/et_registration_no");
+	  entertxtValidRegistrationNo.sendKeys("CL08FRGP");
+	  MobileElement clickOnSubmitBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_veh_no");
+	  clickOnSubmitBtn.click();
 	  
 	  }
 	  
 	  @Test(description= "Invalid Odo reading", priority = 14 )
 
 	  public void InvalidOdoMeterReading() throws InterruptedException {
-		  MobileElement el36 = (MobileElement) driver.findElementById("com.ram.courier:id/et_odometer_reading");
-		  el36.sendKeys("12");
-		  MobileElement el37 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed_veh_no");
-		  el37.click();
+		  MobileElement entertxtInvalidOdometerReading = (MobileElement) driver.findElementById("com.ram.courier:id/et_odometer_reading");
+		  entertxtInvalidOdometerReading.sendKeys("12");
+		  MobileElement clickOnProceedBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed_veh_no");
+		  clickOnProceedBtn.click();
 		  
 		  driver.findElementById("android:id/button1").click();
 		  
@@ -283,10 +283,10 @@ public void ValidManifestID() throws InterruptedException {
 
 	  public void ValidOdoMeterReading() throws InterruptedException {  
 	 
-	  MobileElement el36 = (MobileElement) driver.findElementById("com.ram.courier:id/et_odometer_reading");
-	  el36.sendKeys("123456");
-	  MobileElement el37 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed_veh_no");
-	  el37.click();
+	  MobileElement entertxtValidOdometerReading = (MobileElement) driver.findElementById("com.ram.courier:id/et_odometer_reading");
+	  entertxtValidOdometerReading.sendKeys("123456");
+	  MobileElement clickOnProceedVehNo = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed_veh_no");
+	  clickOnProceedVehNo.click();
 	  
 	  }
 	  
@@ -294,10 +294,10 @@ public void ValidManifestID() throws InterruptedException {
 
 	  public void TapOnOnTheRoad() throws InterruptedException {  
 	 
-	  MobileElement el38 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_on_the_road");
-	  el38.click();
-	  MobileElement el39 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_home_toolbar");
-	  el39.click();
+	  MobileElement clickOnOntheRoadBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_on_the_road");
+	  clickOnOntheRoadBtn.click();
+	  MobileElement clickOnHomeToolBar= (MobileElement) driver.findElementById("com.ram.courier:id/btn_home_toolbar");
+	  clickOnHomeToolBar.click();
 	 
 	 
   }
