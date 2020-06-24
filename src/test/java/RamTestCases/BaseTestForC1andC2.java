@@ -107,12 +107,12 @@ public void AtTheHub () throws InterruptedException {
 		
 		//// Permission
 //			 driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-//			 driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-//			 driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-//			 driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-			
-}
+//			driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
+//
+//driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
+//driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
 
+}
   @Test(description= "validate Login by entering 12", priority = 1 )
   
   public void PreRequisiteforC1andC2OTHModule() throws InterruptedException {

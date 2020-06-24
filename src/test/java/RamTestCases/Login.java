@@ -67,7 +67,7 @@ public void beforeClass() throws MalformedURLException, InterruptedException  {
 		 cap.setCapability("appActivity", "com.ram.courier.activities.SplashScreen");
 		 cap.setCapability("noReset", "true");
 		cap.setCapability("fullReset", "false");
-		cap.setCapability("app","C:/Users/nasreenk/Desktop/Diawi/RAMMobile_UatDebug-2.9.23-2.apk" );
+		cap.setCapability("app","C:/Users/nasreenk/Desktop/Diawi/RAMMobile_UatDebug-2.9.32.apk" );
 		
 		 driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		 driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS) ;
@@ -106,7 +106,7 @@ public void AtTheHub () throws InterruptedException {
 
 	 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[1]").click();
 		
-		//// Permission
+		//// Permission pop up
 			 driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
 			 driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
 			 driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
@@ -119,24 +119,26 @@ public void AtTheHub () throws InterruptedException {
   public void LoginInvalidEnter12DigitId() throws InterruptedException {
 	  
 	  
-	  MobileElement el1 = (MobileElement) driver.findElementById("com.ram.courier:id/ll_login");
-	  el1.click();
-	  MobileElement el2 = (MobileElement) driver.findElementById("com.ram.courier:id/edt_ram_employee_id");
-	  el2.sendKeys("730131015708");
-	  MobileElement el3 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_login");
-	  el3.click();
+	  MobileElement clickOnLoginIcon = (MobileElement) driver.findElementById("com.ram.courier:id/ll_login");
+	  clickOnLoginIcon.click();
+	  
+	  MobileElement entertxtInvalidRamEmployeeID = (MobileElement) driver.findElementById("com.ram.courier:id/edt_ram_employee_id");
+	  entertxtInvalidRamEmployeeID.sendKeys("730131015708");
+	  MobileElement clickOnloginBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_login");
+	  clickOnloginBtn.click();
   }  
+  
 	  @Test(description= "validate by entering 14 digit ", priority = 2 )
 	  
 	  public void LoginInvalidEnter14DigitId() throws InterruptedException {
 		  
 	  
-	  MobileElement el4 = (MobileElement) driver.findElementById("com.ram.courier:id/edt_ram_employee_id");
-	  el4.sendKeys("73013101570812");
-	  MobileElement el5 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_login");
-	  el5.click();
-	  MobileElement el6 = (MobileElement) driver.findElementById("android:id/button1");
-	  el6.click();
+	  MobileElement entertxtValidRamEmployeeID = (MobileElement) driver.findElementById("com.ram.courier:id/edt_ram_employee_id");
+	  entertxtValidRamEmployeeID.sendKeys("73013101570812");
+	  MobileElement clickOnbtnLogin = (MobileElement) driver.findElementById("com.ram.courier:id/btn_login");
+	  clickOnbtnLogin.click();
+	  MobileElement clickOnBtnOK = (MobileElement) driver.findElementById("android:id/button1");
+	  clickOnBtnOK.click();
 	  } 
 	  
 	  
@@ -145,10 +147,10 @@ public void AtTheHub () throws InterruptedException {
 	  public void LoginValidDriverID() throws InterruptedException {
 		    
 	 
-	  MobileElement el7 = (MobileElement) driver.findElementById("com.ram.courier:id/edt_ram_employee_id");
-	  el7.sendKeys("7301310157081");
-	  MobileElement el8 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_login");
-	  el8.click();
+	  MobileElement entertxtRamEmployeeID = (MobileElement) driver.findElementById("com.ram.courier:id/edt_ram_employee_id");
+	  entertxtRamEmployeeID.sendKeys("7301310157081");
+	  MobileElement clickOnBtnLogin = (MobileElement) driver.findElementById("com.ram.courier:id/btn_login");
+	  clickOnBtnLogin.click();
 	  
 }
 

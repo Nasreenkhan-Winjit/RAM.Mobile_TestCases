@@ -63,8 +63,8 @@ public class OtrHandoverParcel {
 		cap.setCapability("autoGrantPermission", "true");
 		cap.setCapability("appPackage", "com.ram.courier");
 		cap.setCapability("appActivity", "com.ram.courier.activities.SplashScreen");
-		//			 cap.setCapability("noReset", "true");
-		//			cap.setCapability("fullReset", "false");
+	    cap.setCapability("noReset", "true");
+		cap.setCapability("fullReset", "false");
 
 
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
@@ -105,11 +105,11 @@ public class OtrHandoverParcel {
 	MobileElement el22 = (MobileElement) driver.findElementById("com.ram.courier:id/ll_handover_parcels");
 	el22.click();
 	
-	MobileElement el4 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_next_deliveries");
-	el4.click();
-	MobileElement el29 = (MobileElement) driver.findElementById("com.ram.courier:id/cb_select_consignment");
-	el29.click();
-	
+//	MobileElement el4 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_next_deliveries");
+//	el4.click();
+//	MobileElement el13 = (MobileElement) driver.findElementById("android:id/button1");
+//	el13.click();
+//	
 	}
 	
 	

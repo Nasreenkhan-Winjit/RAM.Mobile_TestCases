@@ -63,9 +63,8 @@ public class OtrCollection {
 		cap.setCapability("autoGrantPermission", "true");
 		cap.setCapability("appPackage", "com.ram.courier");
 		cap.setCapability("appActivity", "com.ram.courier.activities.SplashScreen");
-		//			 cap.setCapability("noReset", "true");
-		//			cap.setCapability("fullReset", "false");
-
+		cap.setCapability("noReset", "true");
+		cap.setCapability("fullReset", "false");
 
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS) ;
@@ -102,6 +101,10 @@ public class OtrCollection {
 	el1.click();
 	MobileElement el2 = (MobileElement) driver.findElementById("com.ram.courier:id/ll_collections");
 	el2.click();
+	
+//	MobileElement ok = (MobileElement) driver.findElementById("com.ram.courier:id/btn_ok");
+//	ok.click();
+	
 	MobileElement el3 = (MobileElement) driver.findElementByXPath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Pending(3)\"]/android.widget.TextView");
 	el3.click();
 	MobileElement el4 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.CheckBox");
@@ -134,7 +137,7 @@ public class OtrCollection {
 	
 	
 	
-	@Test(description= "Click on Next Button ' ",priority= 1)
+	@Test(description= "Click on Next Button ' ",priority= 2)
 
 	public void CaseToVerifyAcceptCollection() throws InterruptedException {	
 	
@@ -150,7 +153,7 @@ public class OtrCollection {
 	
 	}
 	
-	@Test(description= "Click on Next Button ' ",priority= 1)
+	@Test(description= "Click on Next Button ' ",priority= 3)
 
 	public void CaseToVerifySelectConsignmentforMissedCollection() throws InterruptedException {	
 	
@@ -167,7 +170,7 @@ public class OtrCollection {
 	el18.click();
 	}
 	
-	@Test(description= "Reason-Collection Alredy collected ' ",priority= 1)
+	@Test(description= "Reason-Collection Alredy collected ' ",priority= 4)
 
 	public void CaseToVerifySelectConsignmentforMissedCollectionReason1n2() throws InterruptedException {	
 	
@@ -188,7 +191,7 @@ public class OtrCollection {
 	el25.click();
 	}
 	
-	@Test(description= "Reason-Collection Alredy collected ' ",priority= 1)
+	@Test(description= "Reason-Collection Alredy collected ' ",priority= 5)
 
 	public void CaseToVerifySelectConsignmentforMissedCollectionReason3() throws InterruptedException {	
 	
@@ -210,7 +213,7 @@ public class OtrCollection {
 	el31.click();
 	}
 	
-	@Test(description= "Reason-Collection Alredy collected on cancel button' ",priority= 1)
+	@Test(description= "Reason-Collection Alredy collected on cancel button' ",priority= 6)
 
 	public void CaseToVerifySelectConsignmentNFollowCollectionProcessCancelBtn() throws InterruptedException {	
 	
@@ -248,7 +251,7 @@ public class OtrCollection {
 	}
 	
 	
-	@Test(description= "Reason-Collection Alredy collected on Yes button' ",priority= 1)
+	@Test(description= "Reason-Collection Alredy collected on Yes button' ",priority= 7)
 
 	public void CaseToVerifySelectConsignmentNFollowCollectionProcessYesBtn() throws InterruptedException {	
 	
@@ -266,7 +269,7 @@ public class OtrCollection {
 	}
 	
 	
-	@Test(description= "Reason-Collection Alredy collected on No button' ",priority= 1)
+	@Test(description= "Reason-Collection Alredy collected on No button' ",priority= 8)
 
 	public void CaseToVerifySelectConsignmentNFollowCollectionProcessNoBtn() throws InterruptedException {	
 	

@@ -1,13 +1,13 @@
 package RamTestCases;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
@@ -63,9 +63,11 @@ public class OtrDeliveryC1 {
 		cap.setCapability("autoGrantPermission", "true");
 		cap.setCapability("appPackage", "com.ram.courier");
 		cap.setCapability("appActivity", "com.ram.courier.activities.SplashScreen");
-		//			 cap.setCapability("noReset", "true");
-		//			cap.setCapability("fullReset", "false");
-
+			 cap.setCapability("noReset", "true");
+			cap.setCapability("fullReset", "false");
+			cap.setCapability("unicodeKeyboard", false);
+			cap.setCapability("resetKeyboard", false);
+			
 
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS) ;
@@ -117,6 +119,8 @@ public class OtrDeliveryC1 {
 		MobileElement el2 = (MobileElement) driver.findElementById("com.ram.courier:id/et_waybill_no");
 		el2.sendKeys("A0350538");
 		el2.click();
+		MobileElement el5 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_add_parcel");
+		el5.click();
 		MobileElement el3 = (MobileElement) driver.findElementById("android:id/button1");
 		el3.click();
 		
@@ -127,10 +131,23 @@ public class OtrDeliveryC1 {
 	public void DeliveryvalidParcelNo () throws InterruptedException {	
 		
 		
-		MobileElement el4 = (MobileElement) driver.findElementById("com.ram.courier:id/et_waybill_no");
-		el4.sendKeys("A0350538.001");
-		MobileElement el5 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_add_parcel");
-		el5.click();
+		MobileElement el1 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.CheckBox");
+		el1.click();
+		driver.findElementById("com.ram.courier:id/btn_next_deliveries").click();
+		MobileElement el4 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
+		el4.click();
+		MobileElement el3 = (MobileElement) driver.findElementById("android:id/button1");
+		el3.click();
+		MobileElement el2 = (MobileElement) driver.findElementById("com.ram.courier:id/et_waybill_no");
+		el2.sendKeys("A0350538.001");
+		MobileElement el13 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_add_parcel");
+		el13.click();
+		MobileElement el14 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
+		el14.click();
+		
+		
+		
+		
 	}
 	
 	@Test(description= "Verify Delivery Button",priority= 3)
@@ -139,12 +156,14 @@ public class OtrDeliveryC1 {
 		
 		MobileElement el6 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_delivery");
 		el6.click();
-		MobileElement el7 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
-		el7.click();
-		MobileElement el8 = (MobileElement) driver.findElementById("android:id/button1");
-		el8.click();
-		MobileElement el15 = (MobileElement) driver.findElementById("com.ram.courier:id/tv_name");
-		el15.sendKeys("AutoTest");
+		
+		
+driver.findElementById("com.ram.courier:id/et_receiver_name").sendKeys("autotest");
+		
+//		driver.findElement(By.xpath(props.getProperty(“mobile”))).click();
+//		Actions action = new Actions(driver);
+//		action.sendKeys(“Mobile”).perform();
+
 		MobileElement Proceedbtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
 		Proceedbtn.click();
 	}
@@ -199,8 +218,11 @@ public class OtrDeliveryC1 {
 	MobileElement el1 = (MobileElement) driver.findElementById("com.ram.courier:id/cbAgree");
 	el1.click();
 	driver.findElementById("com.ram.courier:id/btn_next_deliveries").click();
+	MobileElement el9 = (MobileElement) driver.findElementById("android:id/button1");
+	el9.click();
 	MobileElement el2 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.CheckBox");
 	el2.click();
+	driver.findElementById("com.ram.courier:id/btn_next_deliveries").click();
 	MobileElement el4 = (MobileElement) driver.findElementById("com.ram.courier:id/et_waybill_no");
 	el4.sendKeys("PLAT05-90023456.001");
 	MobileElement el5 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_add_parcel");
@@ -211,8 +233,8 @@ public class OtrDeliveryC1 {
 	el7.click();
 	MobileElement el8 = (MobileElement) driver.findElementById("com.ram.courier:id/et_waybill_no");
 	el8.sendKeys("PLAT05-94123456.001");
-	MobileElement el9 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_add_parcel");
-	el9.click();
+	MobileElement el91 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_add_parcel");
+	el91.click();
 	MobileElement el10 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
 	el10.click();
 	MobileElement el11 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_delivery");
