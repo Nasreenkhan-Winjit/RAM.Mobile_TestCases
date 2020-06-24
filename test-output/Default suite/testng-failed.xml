@@ -3,26 +3,34 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="RamTestCases.OtrReturnToHub"/>
+      <class name="RamTestCases.Login"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="RamTestCases.OtrReturnToHub">
+      <class name="RamTestCases.Login">
         <methods>
-          <include name="afterMethod"/>
-          <include name="ReturntoHubScanInvalidWaybillNo"/>
-          <include name="ReturntoHubSelectReasonforOpenDeliveries"/>
-          <include name="ReturntoHubProceedBtn"/>
-          <include name="beforeSuite"/>
-          <include name="ReturntoHubScanValidWaybillNo"/>
-          <include name="ReturntoHubSelectReasonforNextCollectionEnterValidPodNO"/>
-          <include name="beforeMethod"/>
+          <include name="InvalidManifestID"/>
+          <include name="InvalidOdoMeterReading"/>
+          <include name="InValidVehicleID"/>
           <include name="beforeClass"/>
-          <include name="ReturntoHubSelectReasonforNextCollectionEnterINvalidPodNO"/>
-          <include name="ReturntoHubSelectReasonforOpenCollection"/>
+          <include name="LoginValidDriverID"/>
+          <include name="LoginInvalidEnter14DigitId"/>
+          <include name="InvalidConfirmNoOfParcel"/>
+          <include name="ValidProceedToScan"/>
+          <include name="LoginValidCrewMemberID"/>
+          <include name="ValidOdoMeterReading"/>
+          <include name="beforeSuite"/>
+          <include name="LoginInValidCrewMemberID"/>
+          <include name="ValidManifestID"/>
+          <include name="AtTheHub"/>
+          <include name="LoginInvalidEnter12DigitId"/>
+          <include name="ValidConfirmNoOfParcel"/>
+          <include name="ValidVehicleID"/>
+          <include name="InvalidProceedToScan"/>
+          <include name="TapOnOnTheRoad"/>
         </methods>
-      </class> <!-- RamTestCases.OtrReturnToHub -->
+      </class> <!-- RamTestCases.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
