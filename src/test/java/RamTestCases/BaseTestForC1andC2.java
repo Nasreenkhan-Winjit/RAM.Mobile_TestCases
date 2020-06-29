@@ -106,11 +106,11 @@ public void AtTheHub () throws InterruptedException {
 	 driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[1]").click();
 		
 		//// Permission
-//			 driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-//			driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-//
-//driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-//driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
+			 driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
+			driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
+
+driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
+driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
 
 }
   @Test(description= "validate Login by entering 12", priority = 1 )

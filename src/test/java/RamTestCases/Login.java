@@ -62,12 +62,12 @@ public void beforeClass() throws MalformedURLException, InterruptedException  {
 		cap.setCapability("platformVersion", "9");
 		cap.setCapability("deviceName", "Vivo");
 		cap.setCapability("udid", "8SSCCMUCKV7SIVRG");  
-		cap.setCapability("autoGrantPermission", "true");
+		//cap.setCapability("autoGrantPermission", "true");
 		cap.setCapability("appPackage", "com.ram.courier");
-		 cap.setCapability("appActivity", "com.ram.courier.activities.SplashScreen");
-		 cap.setCapability("noReset", "true");
+		cap.setCapability("appActivity", "com.ram.courier.activities.SplashScreen");
+		cap.setCapability("noReset", "true");
 		cap.setCapability("fullReset", "false");
-		cap.setCapability("app","C:/Users/nasreenk/Desktop/Diawi/RAMMobile_UatDebug-2.9.32.apk" );
+		cap.setCapability("app","C:/Users/nasreenk/Desktop/Diawi/RAMMobile_UatDebug-2.9.35.apk" );
 		
 		 driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 		 driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS) ;
@@ -128,33 +128,33 @@ public void AtTheHub () throws InterruptedException {
 	  clickOnloginBtn.click();
   }  
   
-	  @Test(description= "validate by entering 14 digit ", priority = 2 )
+//	  @Test(description= "validate by entering 14 digit ", priority = 2 )
+//	  
+//	  public void LoginInvalidEnter14DigitId() throws InterruptedException {
+//		  
+//	  
+//	  MobileElement entertxtValidRamEmployeeID = (MobileElement) driver.findElementById("com.ram.courier:id/edt_ram_employee_id");
+//	  entertxtValidRamEmployeeID.sendKeys("73013101");
+//	  MobileElement clickOnbtnLogin = (MobileElement) driver.findElementById("com.ram.courier:id/btn_login");
+//	  clickOnbtnLogin.click();
+////	  MobileElement clickOnBtnOK = (MobileElement) driver.findElementById("android:id/button1");
+////	  clickOnBtnOK.click();
+//	  } 
 	  
-	  public void LoginInvalidEnter14DigitId() throws InterruptedException {
-		  
 	  
-	  MobileElement entertxtValidRamEmployeeID = (MobileElement) driver.findElementById("com.ram.courier:id/edt_ram_employee_id");
-	  entertxtValidRamEmployeeID.sendKeys("73013101570812");
-	  MobileElement clickOnbtnLogin = (MobileElement) driver.findElementById("com.ram.courier:id/btn_login");
-	  clickOnbtnLogin.click();
-	  MobileElement clickOnBtnOK = (MobileElement) driver.findElementById("android:id/button1");
-	  clickOnBtnOK.click();
-	  } 
-	  
-	  
-@Test(description= "validate Login with valid ID", priority = 3 )
+@Test(description= "validate Login with valid ID", priority = 2 )
 	  
 	  public void LoginValidDriverID() throws InterruptedException {
 		    
 	 
 	  MobileElement entertxtRamEmployeeID = (MobileElement) driver.findElementById("com.ram.courier:id/edt_ram_employee_id");
-	  entertxtRamEmployeeID.sendKeys("7301310157081");
+	  entertxtRamEmployeeID.sendKeys("7009155154085");
 	  MobileElement clickOnBtnLogin = (MobileElement) driver.findElementById("com.ram.courier:id/btn_login");
 	  clickOnBtnLogin.click();
 	  
 }
 
-@Test(description= "validate AddcrewMember with invalid ID", priority = 4)
+@Test(description= "validate AddcrewMember with invalid ID", priority = 3)
 
 public void LoginInValidCrewMemberID() throws InterruptedException {
 	  
@@ -166,19 +166,19 @@ public void LoginInValidCrewMemberID() throws InterruptedException {
 	  enterInvalidAddCrewMember.sendKeys("700915515408");
 }
 	  
-@Test(description= "validate AddcrewMember with valid ID", priority = 5 )
+@Test(description= "validate AddcrewMember with valid ID", priority = 4 )
 
 public void LoginValidCrewMemberID() throws InterruptedException {
 	  	 
 	  MobileElement clickOnSubmitBtn = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_member");
 	  clickOnSubmitBtn.click();
 	  MobileElement enterValidCrewMember = (MobileElement) driver.findElementById("com.ram.courier:id/et_sa_no");
-	  enterValidCrewMember.sendKeys("7009155154085");
+	  enterValidCrewMember.sendKeys("7301310157081");
 	  MobileElement clickOnSubmitBtn1 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_submit_member");
 	  clickOnSubmitBtn1.click();
 	  
 }  
-@Test(description= "Proceed without entering id", priority = 6 )
+@Test(description= "Proceed without entering id", priority = 5 )
 
 public void InvalidProceedToScan() throws InterruptedException {	
 
@@ -190,7 +190,7 @@ public void InvalidProceedToScan() throws InterruptedException {
 	  clickOnPopOKbtn.click();
 } 
 	  
-@Test(description= "Validate Dont have scan ID", priority = 7 )
+@Test(description= "Validate Dont have scan ID", priority = 6 )
 
 public void ValidProceedToScan() throws InterruptedException {		  
 	  
@@ -198,7 +198,7 @@ public void ValidProceedToScan() throws InterruptedException {
 	  clickOnLinkDeliverySheetNoManually.click();
 }	  
 	  
-@Test(description= "EnterMannually InvalidManifest ID", priority = 8 )
+@Test(description= "EnterMannually InvalidManifest ID", priority = 7 )
 
 public void InvalidManifestID() throws InterruptedException {		  
 	  
@@ -210,7 +210,7 @@ public void InvalidManifestID() throws InterruptedException {
 	  clickOnOKBtn.click();
 	  
 }
-@Test(description= "EnterMannually InvalidManifest ID", priority = 9 )
+@Test(description= "EnterMannually InvalidManifest ID", priority = 8 )
 
 public void ValidManifestID() throws InterruptedException {		  
 	    
@@ -223,17 +223,17 @@ public void ValidManifestID() throws InterruptedException {
 	  MobileElement clickOnProceedBtn1 = (MobileElement) driver.findElementById("com.ram.courier:id/btn_proceed");
 	  clickOnProceedBtn1.click();
 }
-	  @Test(description= "ConfirmNo.Of parcel Invalid case", priority = 10 )
+	  @Test(description= "ConfirmNo.Of parcel Invalid case", priority = 9 )
 
 	  public void InvalidConfirmNoOfParcel() throws InterruptedException {		
 	  MobileElement entertxtInvalidTotalParcel = (MobileElement) driver.findElementById("com.ram.courier:id/et_total_parcels");
 	  entertxtInvalidTotalParcel.sendKeys("16");
 	  MobileElement clickOnProceedBtnforfurthersheet = (MobileElement) driver.findElementById("com.ram.courier:id/proceed_for_further_sheet");
 	  clickOnProceedBtnforfurthersheet.click();
-	  clickOnProceedBtnforfurthersheet.clear();
+	  entertxtInvalidTotalParcel.clear();
 	  }
 	  
-	  @Test(description= "ConfirmNo.Of parcel  valid case", priority = 11 )
+	  @Test(description= "ConfirmNo.Of parcel  valid case", priority = 10 )
 
 	  public void ValidConfirmNoOfParcel() throws InterruptedException {	
 	  
@@ -243,7 +243,7 @@ public void ValidManifestID() throws InterruptedException {
 	  MobileElement clickOnProceedBtnforfurthersheet = (MobileElement) driver.findElementById("com.ram.courier:id/proceed_for_further_sheet");
 	  clickOnProceedBtnforfurthersheet.click();
 	  }
-	  @Test(description= "InValidVehicle No.", priority = 12 )
+	  @Test(description= "InValidVehicle No.", priority = 11 )
 
 	  public void InValidVehicleID() throws InterruptedException {	
 	  
@@ -257,7 +257,7 @@ public void ValidManifestID() throws InterruptedException {
 	  clickOnOkBtn.click();
 	  
 	  }
-	  @Test(description= "Enter Valid Vehicle No.", priority = 13 )
+	  @Test(description= "Enter Valid Vehicle No.", priority = 12 )
 
 	  public void ValidVehicleID() throws InterruptedException {	
 	  MobileElement entertxtValidRegistrationNo = (MobileElement) driver.findElementById("com.ram.courier:id/et_registration_no");
@@ -267,7 +267,7 @@ public void ValidManifestID() throws InterruptedException {
 	  
 	  }
 	  
-	  @Test(description= "Invalid Odo reading", priority = 14 )
+	  @Test(description= "Invalid Odo reading", priority = 13 )
 
 	  public void InvalidOdoMeterReading() throws InterruptedException {
 		  MobileElement entertxtInvalidOdometerReading = (MobileElement) driver.findElementById("com.ram.courier:id/et_odometer_reading");
@@ -279,7 +279,7 @@ public void ValidManifestID() throws InterruptedException {
 		  
 	  }
 	  
-	  @Test(description= "Valid Odometer reading", priority = 15 )
+	  @Test(description= "Valid Odometer reading", priority = 14 )
 
 	  public void ValidOdoMeterReading() throws InterruptedException {  
 	 
@@ -290,7 +290,7 @@ public void ValidManifestID() throws InterruptedException {
 	  
 	  }
 	  
-	  @Test(description= "Click on On the road Icon", priority = 16 )
+	  @Test(description= "Click on On the road Icon", priority = 15 )
 
 	  public void TapOnOnTheRoad() throws InterruptedException {  
 	 
