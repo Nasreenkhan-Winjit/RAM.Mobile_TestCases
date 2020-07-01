@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/17</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 24 15:52:54 IST 2020</td>
+<td>Started on:</td><td>Fri Jun 26 19:22:15 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>127 seconds (127198 ms)</td>
+<tr><td>Total time:</td><td>99 seconds (99064 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,377 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='RamTestCases.Login.beforeClass()'><b>beforeClass</b><br>Test class: RamTestCases.Login</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\nasreenk\\AppData\\Local\\Android\\Sdk\\tools\\adb.exe -P 5037 -s 8SSCCMUCKV7SIVRG shell pm install /data/local/tmp/appium_cache/0ffb793d19257d3d08ad2d0ef7342bc229296741.apk&apos; timed out after 90000ms&apos;. Try to increase the 90000ms adb execution timeout represented by &apos;androidInstallTimeout&apos; capability
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;WJLP-1098&apos;, ip: &apos;192.168.65.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\nasreenk\\AppData\\Local\\Android\\Sdk\\tools\\adb.exe -P 5037 -s 8SSCCMUCKV7SIVRG shell pm install /data/local/tmp/appium_cache/0ffb793d19257d3d08ad2d0ef7342bc229296741.apk&apos; timed out after 90000ms&apos;. Try to increase the 90000ms adb execution timeout represented by &apos;androidInstallTimeout&apos; capability
-    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:388:37)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;WJLP-1098&apos;, ip: &apos;192.168.65.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at RamTestCases.Login.beforeClass(Login.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-	... 38 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\nasreenk\\AppData\\Local\\Android\\Sdk\\tools\\adb.exe -P 5037 -s 8SSCCMUCKV7SIVRG shell pm install /data/local/tmp/appium_cache/0ffb793d19257d3d08ad2d0ef7342bc229296741.apk&apos; timed out after 90000ms&apos;. Try to increase the 90000ms adb execution timeout represented by &apos;androidInstallTimeout&apos; capability
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;WJLP-1098&apos;, ip: &apos;192.168.65.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\nasreenk\\AppData\\Local\\Android\\Sdk\\tools\\adb.exe -P 5037 -s 8SSCCMUCKV7SIVRG shell pm install /data/local/tmp/appium_cache/0ffb793d19257d3d08ad2d0ef7342bc229296741.apk&apos; timed out after 90000ms&apos;. Try to increase the 90000ms adb execution timeout represented by &apos;androidInstallTimeout&apos; capability
-    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:388:37)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.W3CHandshakeResponse$$Lambda$190/8798458.apply(Unknown Source)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.HandshakeResponse$$Lambda$185/26141918.apply(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake$$Lambda$186/22144052.apply(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	... 43 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace4372534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace4372534'><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\nasreenk\\AppData\\Local\\Android\\Sdk\\tools\\adb.exe -P 5037 -s 8SSCCMUCKV7SIVRG shell pm install /data/local/tmp/appium_cache/0ffb793d19257d3d08ad2d0ef7342bc229296741.apk&apos; timed out after 90000ms&apos;. Try to increase the 90000ms adb execution timeout represented by &apos;androidInstallTimeout&apos; capability
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;WJLP-1098&apos;, ip: &apos;192.168.65.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\nasreenk\\AppData\\Local\\Android\\Sdk\\tools\\adb.exe -P 5037 -s 8SSCCMUCKV7SIVRG shell pm install /data/local/tmp/appium_cache/0ffb793d19257d3d08ad2d0ef7342bc229296741.apk&apos; timed out after 90000ms&apos;. Try to increase the 90000ms adb execution timeout represented by &apos;androidInstallTimeout&apos; capability
-    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:388:37)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;WJLP-1098&apos;, ip: &apos;192.168.65.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at RamTestCases.Login.beforeClass(Login.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-	... 38 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\nasreenk\\AppData\\Local\\Android\\Sdk\\tools\\adb.exe -P 5037 -s 8SSCCMUCKV7SIVRG shell pm install /data/local/tmp/appium_cache/0ffb793d19257d3d08ad2d0ef7342bc229296741.apk&apos; timed out after 90000ms&apos;. Try to increase the 90000ms adb execution timeout represented by &apos;androidInstallTimeout&apos; capability
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;WJLP-1098&apos;, ip: &apos;192.168.65.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\nasreenk\\AppData\\Local\\Android\\Sdk\\tools\\adb.exe -P 5037 -s 8SSCCMUCKV7SIVRG shell pm install /data/local/tmp/appium_cache/0ffb793d19257d3d08ad2d0ef7342bc229296741.apk&apos; timed out after 90000ms&apos;. Try to increase the 90000ms adb execution timeout represented by &apos;androidInstallTimeout&apos; capability
-    at getResponseForW3CError (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:388:37)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.W3CHandshakeResponse$$Lambda$190/8798458.apply(Unknown Source)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.HandshakeResponse$$Lambda$185/26141918.apply(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake$$Lambda$186/22144052.apply(Unknown Source)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	... 43 more
-</pre></div></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.beforeMethod()'><b>beforeMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.afterMethod()'><b>afterMethod</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.End()'><b>End</b><br>Test class: RamTestCases.Login</td>
-<td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -446,87 +77,82 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
 <tr>
 <td title='RamTestCases.Login.AtTheHub()'><b>AtTheHub</b><br>Test class: RamTestCases.Login<br>Test method: To verify home screen</td>
 <td></td>
-<td>0</td>
+<td>7</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.InValidVehicleID()'><b>InValidVehicleID</b><br>Test class: RamTestCases.Login<br>Test method: InValidVehicle No.</td>
 <td></td>
-<td>0</td>
+<td>3</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.InvalidConfirmNoOfParcel()'><b>InvalidConfirmNoOfParcel</b><br>Test class: RamTestCases.Login<br>Test method: ConfirmNo.Of parcel Invalid case</td>
 <td></td>
-<td>0</td>
+<td>2</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.InvalidManifestID()'><b>InvalidManifestID</b><br>Test class: RamTestCases.Login<br>Test method: EnterMannually InvalidManifest ID</td>
 <td></td>
-<td>0</td>
+<td>3</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.InvalidOdoMeterReading()'><b>InvalidOdoMeterReading</b><br>Test class: RamTestCases.Login<br>Test method: Invalid Odo reading</td>
 <td></td>
-<td>0</td>
+<td>3</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.InvalidProceedToScan()'><b>InvalidProceedToScan</b><br>Test class: RamTestCases.Login<br>Test method: Proceed without entering id</td>
 <td></td>
-<td>0</td>
+<td>3</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.LoginInValidCrewMemberID()'><b>LoginInValidCrewMemberID</b><br>Test class: RamTestCases.Login<br>Test method: validate AddcrewMember with invalid ID</td>
 <td></td>
-<td>0</td>
+<td>4</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.LoginInvalidEnter12DigitId()'><b>LoginInvalidEnter12DigitId</b><br>Test class: RamTestCases.Login<br>Test method: validate Login by entering 12</td>
 <td></td>
-<td>0</td>
-<td>RamTestCases.Login@d2e7d9</td></tr>
-<tr>
-<td title='RamTestCases.Login.LoginInvalidEnter14DigitId()'><b>LoginInvalidEnter14DigitId</b><br>Test class: RamTestCases.Login<br>Test method: validate by entering 14 digit </td>
-<td></td>
-<td>0</td>
+<td>2</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.LoginValidCrewMemberID()'><b>LoginValidCrewMemberID</b><br>Test class: RamTestCases.Login<br>Test method: validate AddcrewMember with valid ID</td>
 <td></td>
-<td>0</td>
+<td>2</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.LoginValidDriverID()'><b>LoginValidDriverID</b><br>Test class: RamTestCases.Login<br>Test method: validate Login with valid ID</td>
 <td></td>
-<td>0</td>
+<td>2</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.TapOnOnTheRoad()'><b>TapOnOnTheRoad</b><br>Test class: RamTestCases.Login<br>Test method: Click on On the road Icon</td>
 <td></td>
-<td>0</td>
+<td>3</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.ValidConfirmNoOfParcel()'><b>ValidConfirmNoOfParcel</b><br>Test class: RamTestCases.Login<br>Test method: ConfirmNo.Of parcel  valid case</td>
 <td></td>
-<td>0</td>
+<td>2</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.ValidManifestID()'><b>ValidManifestID</b><br>Test class: RamTestCases.Login<br>Test method: EnterMannually InvalidManifest ID</td>
 <td></td>
-<td>0</td>
+<td>6</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.ValidOdoMeterReading()'><b>ValidOdoMeterReading</b><br>Test class: RamTestCases.Login<br>Test method: Valid Odometer reading</td>
 <td></td>
-<td>0</td>
+<td>2</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.ValidProceedToScan()'><b>ValidProceedToScan</b><br>Test class: RamTestCases.Login<br>Test method: Validate Dont have scan ID</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 <tr>
 <td title='RamTestCases.Login.ValidVehicleID()'><b>ValidVehicleID</b><br>Test class: RamTestCases.Login<br>Test method: Enter Valid Vehicle No.</td>
 <td></td>
-<td>0</td>
+<td>2</td>
 <td>RamTestCases.Login@d2e7d9</td></tr>
 </table><p>
 </body>

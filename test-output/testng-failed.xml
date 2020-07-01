@@ -6,31 +6,4 @@
       <class name="RamTestCases.Login"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="RamTestCases.Login">
-        <methods>
-          <include name="InvalidManifestID"/>
-          <include name="InvalidOdoMeterReading"/>
-          <include name="InValidVehicleID"/>
-          <include name="beforeClass"/>
-          <include name="LoginValidDriverID"/>
-          <include name="LoginInvalidEnter14DigitId"/>
-          <include name="InvalidConfirmNoOfParcel"/>
-          <include name="ValidProceedToScan"/>
-          <include name="LoginValidCrewMemberID"/>
-          <include name="ValidOdoMeterReading"/>
-          <include name="beforeSuite"/>
-          <include name="LoginInValidCrewMemberID"/>
-          <include name="ValidManifestID"/>
-          <include name="AtTheHub"/>
-          <include name="LoginInvalidEnter12DigitId"/>
-          <include name="ValidConfirmNoOfParcel"/>
-          <include name="ValidVehicleID"/>
-          <include name="InvalidProceedToScan"/>
-          <include name="TapOnOnTheRoad"/>
-        </methods>
-      </class> <!-- RamTestCases.Login -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
